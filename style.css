@@ -1,3 +1,4 @@
+/* Reset spacing and box model */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,15 +6,18 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Set full height for layout */
 body, html {
   height: 100%;
 }
 
+/* Main layout: side-by-side split */
 .container {
   display: flex;
   height: 100vh;
 }
 
+/* === LEFT PANEL STYLING === */
 .left {
   width: 40%;
   background: url('https://images.unsplash.com/photo-1549880187-933fbcfbc960?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
@@ -21,6 +25,7 @@ body, html {
   color: white;
 }
 
+/* Semi-transparent overlay for text contrast */
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -30,16 +35,19 @@ body, html {
   align-items: center;
 }
 
+/* Logo text styling */
 .overlay h1 {
   font-size: 2.5rem;
   margin-top: 1rem;
 }
 
+/* Odin logo image */
 .logo {
   width: 80px;
   height: 80px;
 }
 
+/* Small text at bottom-left */
 .photo-credit {
   position: absolute;
   bottom: 10px;
@@ -48,6 +56,7 @@ body, html {
   color: #eee;
 }
 
+/* === RIGHT PANEL STYLING === */
 .right {
   width: 60%;
   background: #f8f8f8;
@@ -57,17 +66,20 @@ body, html {
   justify-content: center;
 }
 
+/* Top promo text section */
 .intro {
   margin-bottom: 2rem;
   font-size: 1.1rem;
   color: #333;
 }
 
+/* Form title */
 .form h2 {
   margin-bottom: 1rem;
   color: #222;
 }
 
+/* Grid layout for 2-column form inputs */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -75,6 +87,7 @@ body, html {
   margin-bottom: 1.5rem;
 }
 
+/* Labels for form inputs */
 label {
   display: block;
   font-size: 0.8rem;
@@ -84,6 +97,7 @@ label {
   color: #555;
 }
 
+/* Input field styling */
 input {
   width: 100%;
   padding: 0.5rem;
@@ -92,14 +106,17 @@ input {
   border-radius: 4px;
 }
 
+/* Focus effect for accessibility */
 input:focus {
   outline: 2px solid #4c9aff;
 }
 
+/* Error style override */
 input.error {
   border: 1px solid red;
 }
 
+/* Submit button style */
 button {
   background-color: #556b2f;
   color: white;
@@ -112,10 +129,12 @@ button {
   margin-bottom: 1rem;
 }
 
+/* Login link */
 .login {
   font-size: 0.9rem;
 }
 
+/* Login link color */
 .login a {
   color: #2b6cb0;
   text-decoration: none;

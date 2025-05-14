@@ -3,54 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Odin Signup</title>
+  <title>KamiSoft Enterprises Signup</title>
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
+    <!-- Left panel with background image and logo -->
     <div class="left">
       <div class="overlay">
+        <!-- Placeholder logo, replace with actual if needed -->
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg" alt="Odin logo" class="logo"/>
         <h1>KAMISOFT ENTERPRISES</h1>
       </div>
+      <!-- Image credit -->
       <p class="photo-credit">Photo by Halie West on Unsplash</p>
     </div>
 
+    <!-- Right panel with form and text -->
     <div class="right">
       <div class="intro">
+        <!-- Promotional message -->
         <p><strong>This is not a real online service!</strong> You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
         <p><strong>You <em>know</em></strong> you want to.</p>
       </div>
 
+      <!-- Signup form -->
       <form class="form">
         <h2>Let’s do this!</h2>
+        
+        <!-- Grid layout for input fields -->
         <div class="form-grid">
+          <!-- First Name -->
           <div>
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" placeholder="first-name"/>
           </div>
+          
+          <!-- Last Name -->
           <div>
             <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" placeholder="last-name"/>
+            <input type="text" id="last-name" placeholder="last-name" />
           </div>
+
+          <!-- Email -->
           <div>
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="thor@email.com"/>
+            <input type="email" id="email" placeholder="odinson@email.com"/>
           </div>
+
+          <!-- Phone Number -->
           <div>
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" />
+            <input type="tel" id="phone" placeholder="0802-456-8575"/>
           </div>
+
+          <!-- Password -->
           <div>
             <label for="password">Password</label>
+            <!-- Simulating error style -->
             <input type="password" id="password" class="error" />
           </div>
+
+          <!-- Confirm Password -->
           <div>
             <label for="confirm-password">Confirm Password</label>
             <input type="password" id="confirm-password" class="error" />
           </div>
         </div>
+
+        <!-- Submit button -->
         <button type="submit">Create Account</button>
+
+        <!-- Login redirect -->
         <p class="login">Already have an account? <a href="#">Log in</a></p>
       </form>
     </div>
